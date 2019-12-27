@@ -1,13 +1,14 @@
 <template>
     <div>
         <div class="search-form">
-            <el-select v-model="form.platformValue">
+            <el-select v-model="form.platformValue" @change="handleSelect">
                 <el-option label="贝壳" value="beike"></el-option>
                 <el-option label="链家" value="lianjia"></el-option>
+                <el-option label="自如" value="ziru"></el-option>
             </el-select>
             <el-select v-model="form.typeValue">
-                <el-option label="二手房" value="二手房"></el-option>
-                <el-option label="新房" value="新房"></el-option>
+                <el-option label="二手房" value="二手房" :disabled="typeDisabled"></el-option>
+                <el-option label="新房" value="新房" :disabled="typeDisabled"></el-option>
                 <el-option label="租房" value="租房"></el-option>
             </el-select>
             <el-input v-model="form.search"></el-input>
@@ -44,6 +45,7 @@ export default {
                 currentPage: 1,
             },
             tableData: [],
+            typeDisabled: false,
             currentHeader: {},
             header: {
                 新房: ['title', 'state', 'type', 'position', 'tags', 'totalPrice', 'unitPrice'],
@@ -67,6 +69,17 @@ export default {
             }).catch(function(err) {
                 console.log(err)
             })
+        },
+        handleSelect(val) {
+            let that = this;
+            if(val == 'ziru') {
+                console.log(val)
+                this.form.typeValue = '租房';
+                this.typeDisabled = true;
+            }
+             else {
+                 this.typeDisabled = false;
+             }
         }
     }
 }

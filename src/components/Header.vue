@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-tabs v-model="activeName" @tab-click="handleClick" type="border-card">
+    <el-tabs v-model="activeName" type="border-card">
         <el-tab-pane label="房屋" name="house">
             <HouseSearch></HouseSearch>
         </el-tab-pane>
