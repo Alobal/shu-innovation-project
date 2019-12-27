@@ -1,19 +1,14 @@
-# house
+# 创新项目
 
-## Project setup
+## 后端
+
+``` shell
+python run './api.py'
 ```
+
+## 前端
+
+``` shell
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

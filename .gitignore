@@ -2,6 +2,11 @@
 node_modules
 /dist
 
+.venv/
+.vscode/
+__pycache__/
+/sid.txt
+
 # local env files
 .env.local
 .env.*.local
