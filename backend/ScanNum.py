@@ -40,7 +40,7 @@ def get_num(n):
     return l_num
 
 def get_0_9():
-    l_num = get_num(read_image('test.png'))
+    l_num = get_num(read_image('./test.png'))
     x9,x3,x1,x0,x8,x6,x7,x5,x4,x2 = l_num
     list_num = [x0,x1,x2,x3,x4,x5,x6,x7,x8,x9]
     return list_num
@@ -48,7 +48,7 @@ def get_0_9():
 def scanNum():
     l = []
     list_num = get_0_9()
-    l_num_test = get_num(read_image('temp.png'))
+    l_num_test = get_num(read_image('./temp.png'))
     for i in range(0,10):
         for w in range(0,10):
             if (l_num_test[i] == list_num[w]).all():

@@ -1,6 +1,7 @@
 #前程无忧
 from includes import *
 import settings
+import transform
 def getAreadId():
     url='https://www.51job.com/'
     response=requests.get(url)
@@ -98,4 +99,5 @@ def run(city,job,page):
     totalDict['pages']=pageNum
     totalDict['data']=get_page(page=page,cityid=cityid,name=job)
     jsonText=json.dumps(totalDict,ensure_ascii=False)
+    jsonText = transform.trans_job(jsonText)
     return jsonText

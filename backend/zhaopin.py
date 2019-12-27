@@ -1,5 +1,6 @@
 #智联招聘爬取
 from includes import *
+import transform
 import settings
 def getCity():
     response=requests.get('https://www.zhaopin.com/citymap')
@@ -94,5 +95,6 @@ def run(city,job,page):
     totalDict['job']=job
     totalDict['pages']=50
     totalDict['data']=get_page(page=page,city=city,job=job)
-    josnText=json.dumps(totalDict,ensure_ascii=False)
-    return josnText
+    jsonText =json.dumps(totalDict,ensure_ascii=False)
+    # jsonText = transform.trans_job(jsonText)
+    return jsonText

@@ -1,5 +1,6 @@
 from includes import *
 import settings
+import transform
 import ScanNum
 def safe_get(i,item):
     if item=="" or len(item)-1<i:
@@ -106,4 +107,5 @@ def run(city,page):
     totalDict['pages']=100
     totalDict['data']=get_zufang(page=page, base_url=url)
     jsonText=json.dumps(totalDict,ensure_ascii=False)
+    jsonText = transform.trans_rent_house(jsonText)
     return jsonText

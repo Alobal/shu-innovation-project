@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import beike
 import lianjia
+import ziru
 import zhaopin
 import job51
 import lagou
-import transform
 
 
 app = Flask(__name__)
@@ -29,7 +29,7 @@ def house():
         if platform == 'lianjia':
             return lianjia.run(city, typeh, page)
         if platform == 'ziru':
-            pass
+            return ziru.run(city, page)
     except Exception as e:
         return jsonify({"code": 404, "message": str(e)})
 

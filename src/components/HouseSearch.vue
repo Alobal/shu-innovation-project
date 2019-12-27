@@ -28,7 +28,6 @@
             >
             </el-pagination>
         </div>
-        <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
     </div>
 </template>
 
@@ -52,9 +51,9 @@ export default {
             typeDisabled: false,
             currentHeader: {},
             header: {
-                新房: ['title', 'state', 'type', 'position', 'tags', 'totalPrice', 'unitPrice'],
-                二手房: ['title', 'floor', 'buildTime', 'roomType', 'area', 'direction', 'position', 'viewNum', 'time', 'tags', 'totalPrice', 'unitPrice'],
-                租房: ['title', 'rentType', 'position', 'area', 'direction', 'roomType', 'floor', 'tags', 'brand', 'time', 'price'],
+                新房: ['title', 'houseType', 'state', 'position', 'tags', 'unitPrice', 'totalPrice'],
+                二手房: ['title', 'houseType', 'floor', 'buildTime', 'area', 'direction', 'position', 'tags', 'totalPrice', 'unitPrice'],
+                租房: ['title', 'rentType', 'position', 'area', 'direction', 'tags', 'price'],
             }
         }
     },

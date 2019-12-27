@@ -1,4 +1,5 @@
 from includes import *
+import transform
 import settings
 def get_details(results,sid,page):
     totalList=[]
@@ -128,4 +129,5 @@ def run(city,job,page):
         raise Exception('page小于1或越界')
     totalDict['data']=get_page(page=page,name=job,city=city)
     jsonText=json.dumps(totalDict,ensure_ascii=False)
+    jsonText = transform.trans_job(jsonText)
     return jsonText

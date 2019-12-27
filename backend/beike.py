@@ -1,4 +1,5 @@
 from includes import *
+import transform
 import settings
 def safe_get(i,item):
     if item=="" or len(item)-1<i:
@@ -180,4 +181,11 @@ def run(city,typeh,page):
     totalDict['pages']=100
     totalDict['data']=get_page(page=page,base_url=url,typeh=typeh)
     jsonText=json.dumps(totalDict,ensure_ascii=False)
+    # 统一格式
+    if(typeh == '二手房'):
+        jsonText = transform.trans_seconde_house(jsonText)
+    elif(typeh == '新房'):
+        jsonText = transform.trans_newHouse(jsonText)
+    elif(typeh == '租房'):
+        jsonText = transform.trans_rent_house(jsonText)
     return jsonText

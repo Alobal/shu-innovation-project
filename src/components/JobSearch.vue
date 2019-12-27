@@ -12,8 +12,8 @@
         </div>
         <el-divider></el-divider>
         <div class="result">
-            <el-table :data="tableData" :header="currentHeader">
-                <el-table-column  :key="h" v-for="h in currentHeader" :label="h" :prop="h" width="100px;"/>
+            <el-table :data="tableData" :header="header">
+                <el-table-column  :key="h" v-for="h in header" :label="h" :prop="h" width="100px;"/>
             </el-table>
             <el-pagination
             background
@@ -23,12 +23,12 @@
             >
             </el-pagination>
         </div>
-        <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
     </div>
 </template>
 
 
 <script>
+import {searchJob} from '@/api/search.js'
 export default {
     data() {
         return {
@@ -37,22 +37,32 @@ export default {
                 city: '',
                 job: ''
             },
-            currentHeader: {},
             tableData: [],
             resultDetail: {
                 pageCount: 1
             },
-            header: {
-                '51': [],
-                'zhilian': [],
-                'lagou':[]
-            }
+            header: ['jobName', 'company', 'position', 'salary']
         }
     },
 
     methods: {
         changePage(page) {
-
+            let that = this;
+            searchJob({
+                platform: this.form.platformValue,
+                city: this.form.city,
+                job: this.form.job,
+                page: page
+            }).then(function(res){
+                if(res.data.code == 404) {
+                    that.errMessage = res.data.message;
+                }
+                else {
+                    that.errMessage = '';
+                }
+                that.tableData = res.data.data;
+                that.resultDetail.pageCount = res.data.pages;
+            })
         },
 
     }
