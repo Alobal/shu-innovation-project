@@ -14,6 +14,7 @@
             <el-input v-model="form.search"></el-input>
             <el-button @click="changePage(1)" type="primary">搜索</el-button>
         </div>
+        <el-alert type="error" :title="errMessage" style="margin-top:20px; width:50%;" v-show="errMessage != ''"></el-alert>
         <el-divider></el-divider>
         <div class="result">
             <el-table :data="tableData" :header="currentHeader">
@@ -27,6 +28,7 @@
             >
             </el-pagination>
         </div>
+        <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
     </div>
 </template>
 
@@ -35,6 +37,8 @@ import {searchHouse} from '@/api/search.js'
 export default {
     data() {
         return {
+            errMessage:'',
+            showAlert: true,
             form: {
                 platformValue: 'beike',
                 typeValue: '二手房',
@@ -63,11 +67,15 @@ export default {
                 type: this.form.typeValue,
                 page: page
             }).then(function(res){
+                if(res.data.code == 404) {
+                    that.errMessage = res.data.message;
+                }
+                else {
+                    that.errMessage = '';
+                }
                 that.currentHeader = that.header[that.form.typeValue];
                 that.tableData = res.data.data;
                 that.resultDetail.pageCount = res.data.pages;
-            }).catch(function(err) {
-                console.log(err)
             })
         },
         handleSelect(val) {

@@ -21,27 +21,21 @@ def get_details_1(html):
         if len(houseinfo)==7:
             buildtime=houseinfo[5]
         floortype=houseinfo[-1]
-        subway=item('div.info.clear > div.tag > span.subway').text()
-        vr=item('div.info.clear > div.tag > span.vr').text()
-        taxfree=item('div.info.clear > div.tag > span.taxfree').text()
-        haskey=item('div.info.clear > div.tag > span.haskey').text()
+        tags=item('div.info.clear > div.tag').text()
         dict={
             "link":item('a').attr('href'),
             "title":item('div.info.clear > div.title > a').text(),
             "position":item('div.info.clear > div.flood > div').text().strip(),
-            'housetype':housetype,
+            'houseType':housetype,
             'area':area,
             'direction':direction,
             'decoration':decoration,
             'floor':floor,
-            'buildtime':buildtime,
-            'floortype':floortype,
-            "attentionNum":item('div.info.clear > div.followInfo').text().split('/')[0].strip(),
+            'buildTime':buildtime,
+            'floorType':floortype,
+            "viewNum":item('div.info.clear > div.followInfo').text().split('/')[0].strip(),
             "time":item('div.info.clear > div.followInfo').text().split('/')[1].strip(),
-            'subway':subway,
-            'vr':vr,
-            'taxfree':taxfree,
-            'haskey':haskey,
+            'tags':tags,
             "totalPrice":item('div.info.clear > div.priceInfo > div.totalPrice').text(),
             "unitPrice":item('div.info.clear > div.priceInfo > div.unitPrice').text()
         }
@@ -52,20 +46,15 @@ def get_details_2(html):
     totalList=[]
     for item in allText:
         position = item('div > div.resblock-location').text().strip().split('/')
-        regionOrCircum = position[0]
-        townOrPos = position[1]
-        detailAddress = position[2]
         dict = {
             "link": 'https://sh.fang.lianjia.com'+item('div > div.resblock-name > a').attr('href'),
             "title": item('li > div > div.resblock-name>a').text(),
-            'housetype':item('li>div > div.resblock-name > span.resblock-type').text(),
+            'houseType':item('li>div > div.resblock-name > span.resblock-type').text(),
             'state':item('li> div > div.resblock-name > span.sale-status').text(),
-            'regionOrCircum':regionOrCircum,
-            'townOrPos':townOrPos,
-            'detailAddress':detailAddress,
+            'position':position,
             "houseInfo": item('li> div > a > span').text(),
             "area":item('div > div.resblock-area > span').text(),
-            "tag": item('div > div.resblock-tag').text(),
+            "tags": item('div > div.resblock-tag').text(),
             "totalPrice": item('div > div.resblock-price > div.second').text(),
             "unitPrice": item('div > div.resblock-price > div.main-price').text()
         }
@@ -79,38 +68,20 @@ def get_details_3(html):
         rentType=title[0].split('·')[0]
         realTitle=title[0].split('·')[1]
         info=item('div > p.content__list--item--des').text().split('/')
-        region=info[0].split('-')[0]
-        town=info[0].split('-')[1]
-        detailAddress=info[0].split('-')[2]
+        position=info[0]
         area=info[1]
         direction=info[2]
         roomType=info[3]
-        isNew=item('div > p.content__list--item--bottom.oneline>i.content__item__tag--is_new').text()
-        isApartment=item('p.content__list--item--bottom.oneline > i.content__item__tag--authorization_apartment').text()
-        rent_preiod_month=item('p.content__list--item--bottom.oneline > i.content__item__tag--rent_period_month').text()
-        subway=item('p.content__list--item--bottom.oneline > i.content__item__tag--is_subway_house').text()
-        decoration=item('p.content__list--item--bottom.oneline > i.content__item__tag--decoration').text()
-        independent_balcony=item('p.content__list--item--bottom.oneline > i.content__item__tag--independent_balcony')
-        isKey=item('p.content__list--item--bottom.oneline > i.content__item__tag--is_key').text()
-        bathroom=item('p.content__list--item--bottom.oneline > i.content__item__tag--two_bathroom').text()
+        tags=item('div > p.content__list--item--bottom.oneline>i').text()
         dict={
             'link':'https://sh.lianjia.com/'+item('div > p.content__list--item--title.twoline > a').attr('href'),
             'rentType':rentType,
             'title':realTitle,
-            'region':region,
-            'town':town,
-            'detailAddress':detailAddress,
+            'position':position,
             'area':area,
             'direction':direction,
             'roomType':roomType,
-            'isNew':isNew,
-            'isApartment':isApartment,
-            'rent_preiod_month':rent_preiod_month,
-            'subway':subway,
-            'decoration':decoration,
-            'independent_balcony':independent_balcony,
-            'isKey':isKey,
-            'bathroom':bathroom,
+            'tags':tags,
             'time':item('div > p.content__list--item--brand.oneline > span.content__list--item--time.oneline').text(),
             'price':item('div > span').text()
         }

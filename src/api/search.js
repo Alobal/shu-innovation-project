@@ -7,3 +7,11 @@ export function searchHouse(params) {
         params
     })
 }
+
+export function searchJob(params) {
+    return request({
+        url: '/job',
+        method: 'get',
+        params
+    })
+}

@@ -55,11 +55,11 @@ def get_zufang_detail(html):
                 'link':link,
                 'title':title,
                 'rentType':rentType,
-                'roomDirection':roomDirection,
+                'direction':roomDirection,
                 'area':area,
                 'floor':floor,
                 'position':item('div.info-box > div.desc > div.location').text(),
-                'tag':item('div.info-box > div.tag').text(),
+                'tags':item('div.info-box > div.tag').text(),
                 'detection':detection,
                 'emptyTime':emptyTime,
                 'price':price

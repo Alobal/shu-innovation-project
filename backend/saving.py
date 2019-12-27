@@ -3,28 +3,28 @@ import json
 import csv
 import os
 def saveFile(path,jsonText):
-    if not os.path.exists(path):
-        # 创建文件
-        os.mkdir(path)
     if isinstance(jsonText, str):
        jsonText=json.loads(jsonText)
     name=jsonText['name']
-    city=jsonText['city']
-    last=''
+    finStr=''
+    if 'city' in jsonText:
+        finStr+=jsonText['city']
     if 'type' in jsonText:
-        last=jsonText['type']
+        finStr+=' '+jsonText['type']
     elif 'job' in jsonText:
-        last=jsonText['job']
+        finStr+=' '+jsonText['job']
+    elif 'keyword' in jsonText:
+        finStr+=jsonText['keyword']
     data=jsonText['data']
     fieldnames=[]
     for k in data[0]:
         fieldnames.append(k)
-    os.chdir(path)
-    if not os.path.exists(name):
+    #os.chdir(path)
+    if not os.path.exists(path+'/'+name):
         # 创建文件
-        os.mkdir(name)
-    os.chdir(name)
-    file = open(city+'-'+last+'.csv', 'w', encoding='utf-8', newline='')
+        os.mkdir(path+'/'+name)
+    #os.chdir(name)
+    file = open(path+'/'+name+'/'+finStr+'.csv', 'w', encoding='utf-8', newline='')
     writer = csv.DictWriter(file, fieldnames=fieldnames)
     writer.writeheader()
     for dict in data:
