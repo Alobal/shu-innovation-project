@@ -127,6 +127,12 @@ def get_all(city,typeh):
             totalList.append(item)
     totalDict['data']=totalList
     jsonText = json.dumps(totalDict, ensure_ascii=False)
+    if (typeh == '二手房'):
+        jsonText = transform.trans_seconde_house(jsonText)
+    elif (typeh == '新房'):
+        jsonText = transform.trans_newHouse(jsonText)
+    elif (typeh == '租房'):
+        jsonText = transform.trans_rent_house(jsonText)
     return jsonText
 def run(city,typeh,page):
     if city not in settings.lianjiacityDict:

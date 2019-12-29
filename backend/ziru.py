@@ -91,6 +91,7 @@ def get_all(city):
             totalList.append(item)
     totalDict['data']=totalList
     jsonText = json.dumps(totalDict, ensure_ascii=False)
+    jsonText = transform.trans_rent_house(jsonText)
     return jsonText
 def run(city,page):
     if city not in settings.zirucityDict:

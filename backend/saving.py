@@ -20,6 +20,8 @@ def saveFile(path,jsonText):
     for k in data[0]:
         fieldnames.append(k)
     #os.chdir(path)
+    if not os.path.exists(path):
+        os.mkdir(path)
     if not os.path.exists(path+'/'+name):
         # 创建文件
         os.mkdir(path+'/'+name)
