@@ -7,6 +7,8 @@ venv/
 __pycache__/
 /sid.txt
 
+docker.tar
+
 # local env files
 .env.local
 .env.*.local

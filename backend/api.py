@@ -49,5 +49,6 @@ def job():
     except Exception as e:
         return jsonify({"code": 404, "message": str(e)})
 
-    
-app.run(host='0.0.0.0')
+if __name__ == '__main__':
+    # 不加这个 部署的时候会报错 address alread in use
+    app.run(host='0.0.0.0', port=8080)
