@@ -18,10 +18,15 @@ def get_details_1(html):
         direction=houseinfo[2]
         decoration=houseinfo[3]
         floor=houseinfo[4]
-        buildtime=''
-        if len(houseinfo)==7:
-            buildtime=houseinfo[5]
-        floortype=houseinfo[-1]
+        buildtime = ''
+        floortype = ''
+        if '年建' in houseinfo[5]:
+            buildtime = houseinfo[5]
+            for i in range(6, len(houseinfo)):
+                floortype += houseinfo[i] + ' '
+        else:
+            for i in range(5, len(houseinfo)):
+                floortype += houseinfo[i] + ' '
         tags=item('div.info.clear > div.tag').text()
         dict={
             "link":item('a').attr('href'),

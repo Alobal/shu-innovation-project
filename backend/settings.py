@@ -106,7 +106,7 @@ jindongHeadear2={
 
 
 
-
+#房天下
 fangCityDict={'北京': 'https://bj.5i5j.com/', '成都': 'https://cd.5i5j.com/', '长沙': 'https://cs.5i5j.com/', '杭州': 'https://hz.5i5j.com/', '南昌': 'https://nc.5i5j.com/', '南京': 'https://nj.5i5j.com/', '南宁': 'https://nn.5i5j.com/', '青岛': 'https://qd.5i5j.com/', '上海': 'https://sh.5i5j.com/', '苏州': 'https://sz.5i5j.com/', '天津': 'https://tj.5i5j.com/', '太原': 'https://ty.5i5j.com/', '武汉': 'https://wh.5i5j.com/', '无锡': 'https://wx.5i5j.com/', '郑州': 'https://zz.5i5j.com/'}
 fangHeader={
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -122,5 +122,102 @@ fangHeader={
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     }
+
+#猎聘设置
+liepinCityLinkDict={'安阳': 'https://www.liepin.com/city-anyang/', '安庆': 'https://www.liepin.com/city-anqing/', '鞍山': 'https://www.liepin.com/city-anshan/', '安顺': 'https://www.liepin.com/city-anshun/', '北京': 'https://www.liepin.com/city-bj/', '包头': 'https://www.liepin.com/city-baotou/', '北海': 'https://www.liepin.com/city-beihai/', '蚌埠': 'https://www.liepin.com/city-bengbu/', '宝鸡': 'https://www.liepin.com/city-baoji/', '保定': 'https://www.liepin.com/city-baoding/', '本溪': 'https://www.liepin.com/city-benxi/', '滨州': 'https://www.liepin.com/city-binzhou/', '巴中': 'https://www.liepin.com/city-bazhong/', '保山': 'https://www.liepin.com/city-baoshan/', '毕节': 'https://www.liepin.com/city-bijie/', '百色': 'https://www.liepin.com/city-baise/', '重庆': 'https://www.liepin.com/city-cq/', '常州': 'https://www.liepin.com/city-changzhou/', '成都': 'https://www.liepin.com/city-cd/', '沧州': 'https://www.liepin.com/city-cangzhou/', '长春': 'https://www.liepin.com/city-changchun/', '长沙': 'https://www.liepin.com/city-changsha/', '郴州': 'https://www.liepin.com/city-chenzhou/', '承德': 'https://www.liepin.com/city-chengde/', '常熟': 'https://www.liepin.com/city-changshu/', '常德': 'https://www.liepin.com/city-changde/', '朝阳': 'https://www.liepin.com/city-chaoyang/', '赤峰': 'https://www.liepin.com/city-chifeng/', '长治': 'https://www.liepin.com/city-changzhi/', '楚雄': 'https://www.liepin.com/city-chuxiong/', '潮州': 'https://www.liepin.com/city-chaozhou/', '巢湖': 'https://www.liepin.com/city-chaohu/', '池州': 'https://www.liepin.com/city-chizhou/', '大庆': 'https://www.liepin.com/city-daqing/', '大连': 'https://www.liepin.com/city-dl/', '德州': 'https://www.liepin.com/city-dezhou/', '大同': 'https://www.liepin.com/city-datong/', '东莞': 'https://www.liepin.com/city-dongguan/', '东营': 'https://www.liepin.com/city-dongying/', '达州': 'https://www.liepin.com/city-dazhou/', '德阳': 'https://www.liepin.com/city-deyang/', '丹阳': 'https://www.liepin.com/city-danyang/', '鄂尔多斯': 'https://www.liepin.com/city-eerduosi/', '鄂州': 'https://www.liepin.com/city-ezhou/', '恩施': 'https://www.liepin.com/city-enshi/', '佛山': 'https://www.liepin.com/city-foshan/', '福州': 'https://www.liepin.com/city-fuzhou/', '阜新': 'https://www.liepin.com/city-fuxin/', '抚顺': 'https://www.liepin.com/city-fushun/', '福建省': 'https://www.liepin.com/city-fujian/', '防城港': 'https://www.liepin.com/city-fangchenggang/', '广州': 'https://www.liepin.com/city-gz/', '桂林': 'https://www.liepin.com/city-guilin/', '贵阳': 'https://www.liepin.com/city-guiyang/', '赣州': 'https://www.liepin.com/city-ganzhou/', '广安': 'https://www.liepin.com/city-guangan/', '广元': 'https://www.liepin.com/city-guangyuan/', '广东省': 'https://www.liepin.com/city-guangdong/', '甘肃省': 'https://www.liepin.com/city-gansu/', '贵港': 'https://www.liepin.com/city-guigang/', '贵州省': 'https://www.liepin.com/city-guizhou/', '广西': 'https://www.liepin.com/city-guangxi/', '杭州': 'https://www.liepin.com/city-hz/', '合肥': 'https://www.liepin.com/city-hefei/', '哈尔滨': 'https://www.liepin.com/city-haerbin/', '海口': 'https://www.liepin.com/city-haikou/', '湖州': 'https://www.liepin.com/city-huzhou/', '呼和浩特': 'https://www.liepin.com/city-huhehaote/', '邯郸': 'https://www.liepin.com/city-handan/', '衡阳': 'https://www.liepin.com/city-hengyang/', '淮安': 'https://www.liepin.com/city-huaian/', '黑龙江省': 'https://www.liepin.com/city-heilongjiang/', '惠州': 'https://www.liepin.com/city-huizhou/', '湖南省': 'https://www.liepin.com/city-hunan/', '怀化': 'https://www.liepin.com/city-huaihua/', '黄石': 'https://www.liepin.com/city-huangshi/', '黄冈': 'https://www.liepin.com/city-huanggang/', '葫芦岛': 'https://www.liepin.com/city-huludao/', '黄岛': 'https://www.liepin.com/city-huangdao/', '菏泽': 'https://www.liepin.com/city-heze/', '汉中': 'https://www.liepin.com/city-hanzhong/', '河源': 'https://www.liepin.com/city-heyuan/', '香港': 'https://www.liepin.com/city-hongkong/', '湖北省': 'https://www.liepin.com/city-hubei/', '鹤岗': 'https://www.liepin.com/city-hegang/', '河北省': 'https://www.liepin.com/city-hebei/', '海南省': 'https://www.liepin.com/city-hainan/', '衡水': 'https://www.liepin.com/city-hengshui/', '河南省': 'https://www.liepin.com/city-henan/', '鹤壁': 'https://www.liepin.com/city-hebi/', '济南': 'https://www.liepin.com/city-jinan/', '九江': 'https://www.liepin.com/city-jiujiang/', '嘉兴': 'https://www.liepin.com/city-jiaxing/', '揭阳': 'https://www.liepin.com/city-jieyang/', '吉林': 'https://www.liepin.com/city-jilin/', '荆州': 'https://www.liepin.com/city-jingzhou/', '景德镇': 'https://www.liepin.com/city-jingdezhen/', '江门': 'https://www.liepin.com/city-jiangmen/', '金华': 'https://www.liepin.com/city-jinhua/', '济宁': 'https://www.liepin.com/city-jining/', '佳木斯': 'https://www.liepin.com/city-jiamusi/', '济源': 'https://www.liepin.com/city-jiyuan/', '江西省': 'https://www.liepin.com/city-jiangxi/', '晋中': 'https://www.liepin.com/city-jinzhong/', '晋城': 'https://www.liepin.com/city-jincheng/', '江苏省': 'https://www.liepin.com/city-jiangsu/', '晋江': 'https://www.liepin.com/city-jinjiang/', '江阴': 'https://www.liepin.com/city-jiangyin/', '焦作': 'https://www.liepin.com/city-jiaozuo/', '鸡西': 'https://www.liepin.com/city-jixi/', '荆门': 'https://www.liepin.com/city-jingmen/', '昆明': 'https://www.liepin.com/city-kunming/', '开封': 'https://www.liepin.com/city-kaifeng/', '昆山': 'https://www.liepin.com/city-kunshan/', '开平': 'https://www.liepin.com/city-kaiping/', '洛阳': 'https://www.liepin.com/city-luoyang/', '柳州': 'https://www.liepin.com/city-liuzhou/', '廊坊': 'https://www.liepin.com/city-langfang/', '聊城': 'https://www.liepin.com/city-liaocheng/', '临沂': 'https://www.liepin.com/city-linyi/', '连云港': 'https://www.liepin.com/city-lianyungang/', '兰州': 'https://www.liepin.com/city-lanzhou/', '辽阳': 'https://www.liepin.com/city-liaoyang/', '辽宁省': 'https://www.liepin.com/city-liaoning/', '莱芜': 'https://www.liepin.com/city-laiwu/', '吕梁': 'https://www.liepin.com/city-lvliang/', '丽江': 'https://www.liepin.com/city-lijiang/', '拉萨': 'https://www.liepin.com/city-lasa/', '泸州': 'https://www.liepin.com/city-luzhou/', '乐山': 'https://www.liepin.com/city-leshan/', '龙岩': 'https://www.liepin.com/city-longyan/', '溧阳': 'https://www.liepin.com/city-liyang/', '六盘水': 'https://www.liepin.com/city-liupanshui/', '来宾': 'https://www.liepin.com/city-laibin/', '漯河': 'https://www.liepin.com/city-luohe/', '马鞍山': 'https://www.liepin.com/city-maanshan/', '茂名': 'https://www.liepin.com/city-maoming/', '牡丹江': 'https://www.liepin.com/city-mudanjiang/', '绵阳': 'https://www.liepin.com/city-mianyang/', '眉山': 'https://www.liepin.com/city-meishan/', '梅州': 'https://www.liepin.com/city-meizhou/', '南京': 'https://www.liepin.com/city-nj/', '南通': 'https://www.liepin.com/city-nantong/', '南昌': 'https://www.liepin.com/city-nanchang/', '宁波': 'https://www.liepin.com/city-ningbo/', '南阳': 'https://www.liepin.com/city-nanyang/', '南宁': 'https://www.liepin.com/city-nanning/', '内蒙古': 'https://www.liepin.com/city-neimenggu/', '宁夏': 'https://www.liepin.com/city-ningxia/', '南充': 'https://www.liepin.com/city-nanchong/', '内江': 'https://www.liepin.com/city-neijiang/', '宁德': 'https://www.liepin.com/city-ningde/', '南平': 'https://www.liepin.com/city-nanping/', '平顶山': 'https://www.liepin.com/city-pingdingshan/', '濮阳': 'https://www.liepin.com/city-puyang/', '萍乡': 'https://www.liepin.com/city-pingxiang/', '攀枝花': 'https://www.liepin.com/city-panzhihua/', '莆田': 'https://www.liepin.com/city-putian/', '泉州': 'https://www.liepin.com/city-quanzhou/', '青岛': 'https://www.liepin.com/city-qingdao/', '秦皇岛': 'https://www.liepin.com/city-qinhuangdao/', '齐齐哈尔': 'https://www.liepin.com/city-qiqihaer/', '衢州': 'https://www.liepin.com/city-quzhou/', '青海省': 'https://www.liepin.com/city-qinghai/', '清远': 'https://www.liepin.com/city-qingyuan/', '钦州': 'https://www.liepin.com/city-qinzhou/', '庆阳': 'https://www.liepin.com/city-qingyang/', '日照': 'https://www.liepin.com/city-rizhao/', '上海': 'https://www.liepin.com/city-sh/', '深圳': 'https://www.liepin.com/city-sz/', '苏州': 'https://www.liepin.com/city-suzhou/', '石家庄': 'https://www.liepin.com/city-shijiazhuang/', '汕头': 'https://www.liepin.com/city-shantou/', '绍兴': 'https://www.liepin.com/city-shaoxing/', '沈阳': 'https://www.liepin.com/city-shenyang/', '十堰': 'https://www.liepin.com/city-shiyan/', '绥化': 'https://www.liepin.com/city-suihua/', '邵阳': 'https://www.liepin.com/city-shaoyang/', '随州': 'https://www.liepin.com/city-suizhou/', '山西省': 'https://www.liepin.com/city-shanxi0351/', '朔州': 'https://www.liepin.com/city-shuozhou/', '山东省': 'https://www.liepin.com/city-shandong/', '陕西省': 'https://www.liepin.com/city-shanxi/', '四川省': 'https://www.liepin.com/city-sichuan/', '宿迁': 'https://www.liepin.com/city-suqian/', '韶关': 'https://www.liepin.com/city-shaoguan/', '汕尾': 'https://www.liepin.com/city-shanwei/', '三明': 'https://www.liepin.com/city-sanming/', '三亚': 'https://www.liepin.com/city-sanya/', '商丘': 'https://www.liepin.com/city-shangqiu/', '三门峡': 'https://www.liepin.com/city-shanmenxia/', '天津': 'https://www.liepin.com/city-tj/', '唐山': 'https://www.liepin.com/city-tangshan/', '太原': 'https://www.liepin.com/city-taiyuan/', '泰州': 'https://www.liepin.com/city-taizhou1/', '台州': 'https://www.liepin.com/city-taizhou/', '泰安': 'https://www.liepin.com/city-taian/', '铁岭': 'https://www.liepin.com/city-tieling/', '通辽': 'https://www.liepin.com/city-tongliao/', '铜川': 'https://www.liepin.com/city-tongchuan/', '太仓': 'https://www.liepin.com/city-taicang/', '天水': 'https://www.liepin.com/city-tianshui/', '铜仁': 'https://www.liepin.com/city-tongren/', '温州': 'https://www.liepin.com/city-wenzhou/', '无锡': 'https://www.liepin.com/city-wuxi/', '芜湖': 'https://www.liepin.com/city-wuhu/', '武汉': 'https://www.liepin.com/city-wuhan/', '乌鲁木齐': 'https://www.liepin.com/city-wulumuqi/', '威海': 'https://www.liepin.com/city-weihai/', '潍坊': 'https://www.liepin.com/city-weifang/', '吴忠': 'https://www.liepin.com/city-wuzhong/', '乌兰察布': 'https://www.liepin.com/city-wulanchabu/', '渭南': 'https://www.liepin.com/city-weinan/', '文山': 'https://www.liepin.com/city-wenshan/', '梧州': 'https://www.liepin.com/city-wuzhou/', '武威': 'https://www.liepin.com/city-wuwei/', '厦门': 'https://www.liepin.com/city-xiamen/', '新乡': 'https://www.liepin.com/city-xinxiang/', '西安': 'https://www.liepin.com/city-xian/', '邢台': 'https://www.liepin.com/city-xingtai/', '徐州': 'https://www.liepin.com/city-xuzhou/', '西宁': 'https://www.liepin.com/city-xining/', '大理': 'https://www.liepin.com/city-dali/', '湘潭': 'https://www.liepin.com/city-xiangtan/', '湘西': 'https://www.liepin.com/city-xiangxi/', '襄阳': 'https://www.liepin.com/city-xiangyang/', '咸宁': 'https://www.liepin.com/city-xianning/', '孝感': 'https://www.liepin.com/city-xiaogan/', '新余': 'https://www.liepin.com/city-xinyu/', '忻州': 'https://www.liepin.com/city-xinzhou/', '西双版纳': 'https://www.liepin.com/city-xishuangbanna/', '新疆': 'https://www.liepin.com/city-xinjiang/', '宣城': 'https://www.liepin.com/city-xuancheng/', '许昌': 'https://www.liepin.com/city-xuchang/', '信阳': 'https://www.liepin.com/city-xinyang/', '扬州': 'https://www.liepin.com/city-yangzhou/', '盐城': 'https://www.liepin.com/city-yancheng/', '岳阳': 'https://www.liepin.com/city-yueyang/', '宜昌': 'https://www.liepin.com/city-yichang/', '烟台': 'https://www.liepin.com/city-yantai/', '银川': 'https://www.liepin.com/city-yinchuan/', '益阳': 'https://www.liepin.com/city-yiyang/', '营口': 'https://www.liepin.com/city-yingkou/', '宜春': 'https://www.liepin.com/city-yichun0795/', '阳泉': 'https://www.liepin.com/city-yangquan/', '延安': 'https://www.liepin.com/city-yanan/', '雅安': 'https://www.liepin.com/city-yaan/', '云南省': 'https://www.liepin.com/city-yunnan/', '玉溪': 'https://www.liepin.com/city-yuxi/', '榆林': 'https://www.liepin.com/city-yulin0912/', '云浮': 'https://www.liepin.com/city-yunfu/', '阳江': 'https://www.liepin.com/city-yangjiang/', '宜兴': 'https://www.liepin.com/city-yixing/', '玉林': 'https://www.liepin.com/city-yulin/', '郑州': 'https://www.liepin.com/city-zhengzhou/', '漳州': 'https://www.liepin.com/city-zhangzhou/', '遵义': 'https://www.liepin.com/city-zunyi/', '湛江': 'https://www.liepin.com/city-zhanjiang/', '株洲': 'https://www.liepin.com/city-zhuzhou/', '淄博': 'https://www.liepin.com/city-zibo/', '自贡': 'https://www.liepin.com/city-zigong/', '珠海': 'https://www.liepin.com/city-zhuhai/', '镇江': 'https://www.liepin.com/city-zhenjiang/', '肇庆': 'https://www.liepin.com/city-zhaoqing/', '中山': 'https://www.liepin.com/city-zhongshan/', '张家界': 'https://www.liepin.com/city-zhangjiajie/', '枣庄': 'https://www.liepin.com/city-zaozhuang/', '昭通': 'https://www.liepin.com/city-zhaotong/', '资阳': 'https://www.liepin.com/city-ziyang/', '张家港': 'https://www.liepin.com/city-zhangjiagang/', '张掖': 'https://www.liepin.com/city-zhangye/', '张家口': 'https://www.liepin.com/city-zhangjiakou/', '周口': 'https://www.liepin.com/city-zhoukou/', '驻马店': 'https://www.liepin.com/city-zhumadian/'}
+liepinCityCodeDict={'安阳': '150060', '安庆': '080030', '鞍山': '210030', '安顺': '120050', '北京': '010', '包头': '220030', '北海': '110030', '蚌埠': '080040', '宝鸡': '270030', '保定': '140030', '本溪': '210070', '滨州': '250150', '巴中': '280180', '保山': '310070', '毕节': '120060', '百色': '110110', '重庆': '040', '常州': '060040', '成都': '280020', '沧州': '140110', '长春': '190020', '长沙': '180020', '郴州': '180080', '承德': '140040', '常熟': '060030', '常德': '180050', '朝阳': '210150', '赤峰': '220040', '长治': '260060', '楚雄': '310150', '潮州': '050030', '巢湖': '080180', '池州': '080160', '大庆': '160030', '大连': '210040', '德州': '250030', '大同': '260030', '东莞': '050040', '东营': '250040', '达州': '280160', '德阳': '280100', '丹阳': '060200', '鄂尔多斯': '220050', '鄂州': '170100', '恩施': '170180', '佛山': '050050', '福州': '090020', '阜新': '210110', '抚顺': '210060', '福建省': '090', '防城港': '110100', '广州': '050020', '桂林': '110040', '贵阳': '120020', '赣州': '200040', '广安': '280150', '广元': '280110', '广东省': '050', '甘肃省': '100', '贵港': '110150', '贵州省': '120', '广西': '110', '杭州': '070020', '合肥': '080020', '哈尔滨': '160020', '海口': '130020', '湖州': '070080', '呼和浩特': '220020', '邯郸': '140050', '衡阳': '180060', '淮安': '060140', '黑龙江省': '160', '惠州': '050060', '湖南省': '180', '怀化': '180140', '黄石': '170090', '黄冈': '170110', '葫芦岛': '210050', '黄岛': '250200', '菏泽': '250170', '汉中': '270070', '河源': '050210', '香港': '320', '湖北省': '170', '鹤岗': '160080', '河北省': '140', '海南省': '130', '衡水': '140120', '河南省': '150', '鹤壁': '150140', '济南': '250020', '九江': '200030', '嘉兴': '070090', '揭阳': '050220', '吉林': '190030', '荆州': '170080', '景德镇': '200090', '江门': '050150', '金华': '070060', '济宁': '250050', '佳木斯': '160040', '济源': '150190', '江西省': '200', '晋中': '260100', '晋城': '260080', '江苏省': '060', '晋江': '090130', '江阴': '060190', '焦作': '150090', '鸡西': '160070', '荆门': '170070', '昆明': '310020', '开封': '150030', '昆山': '060050', '开平': '050240', '洛阳': '150040', '柳州': '110050', '廊坊': '140060', '聊城': '250160', '临沂': '250060', '连云港': '060060', '兰州': '100020', '辽阳': '210120', '辽宁省': '210', '莱芜': '250180', '吕梁': '260120', '丽江': '310040', '拉萨': '290020', '泸州': '280040', '乐山': '280030', '龙岩': '090090', '溧阳': '060210', '六盘水': '120040', '来宾': '110090', '漯河': '150120', '马鞍山': '080070', '茂名': '050180', '牡丹江': '160050', '绵阳': '280050', '眉山': '280140', '梅州': '050190', '南京': '060020', '南通': '060070', '南昌': '200020', '宁波': '070030', '南阳': '150170', '南宁': '110020', '内蒙古': '220', '宁夏': '230', '南充': '280130', '内江': '280060', '宁德': '090100', '南平': '090080', '平顶山': '150070', '濮阳': '150100', '萍乡': '200100', '攀枝花': '280090', '莆田': '090060', '泉州': '090030', '青岛': '250070', '秦皇岛': '140070', '齐齐哈尔': '160060', '衢州': '070100', '青海省': '240', '清远': '050070', '钦州': '110120', '庆阳': '100130', '日照': '250080', '上海': '020', '深圳': '050090', '苏州': '060080', '石家庄': '140020', '汕头': '050080', '绍兴': '070050', '沈阳': '210020', '十堰': '170030', '绥化': '160130', '邵阳': '180100', '随州': '170140', '山西省': '260', '朔州': '260090', '山东省': '250', '陕西省': '270', '四川省': '280', '宿迁': '060170', '韶关': '050170', '汕尾': '050200', '三明': '090070', '三亚': '130030', '商丘': '150050', '三门峡': '150130', '天津': '030', '唐山': '140080', '太原': '260020', '泰州': '060160', '台州': '070070', '泰安': '250090', '铁岭': '210140', '通辽': '220070', '铜川': '270050', '太仓': '060090', '天水': '100070', '铜仁': '120070', '温州': '070040', '无锡': '060100', '芜湖': '080050', '武汉': '170020', '乌鲁木齐': '300020', '威海': '250100', '潍坊': '250110', '吴忠': '230040', '乌兰察布': '220100', '渭南': '270060', '文山': '310120', '梧州': '110070', '武威': '100090', '厦门': '090040', '新乡': '150080', '西安': '270020', '邢台': '140100', '徐州': '060110', '西宁': '240020', '大理': '310030', '湘潭': '180030', '湘西': '180150', '襄阳': '170040', '咸宁': '170130', '孝感': '170120', '新余': '200110', '忻州': '260110', '西双版纳': '310130', '新疆': '300', '宣城': '080170', '许昌': '150110', '信阳': '150180', '扬州': '060120', '盐城': '060150', '岳阳': '180090', '宜昌': '170050', '烟台': '250120', '银川': '230020', '益阳': '180070', '营口': '210100', '宜春': '200050', '阳泉': '260070', '延安': '270100', '雅安': '280170', '云南省': '310', '玉溪': '310050', '榆林': '270110', '云浮': '050230', '阳江': '050160', '宜兴': '060230', '玉林': '110060', '郑州': '150020', '漳州': '090050', '遵义': '120030', '湛江': '050110', '株洲': '180040', '淄博': '250130', '自贡': '280080', '珠海': '050140', '镇江': '060130', '肇庆': '050120', '中山': '050130', '张家界': '180110', '枣庄': '250140', '昭通': '310080', '资阳': '280190', '张家港': '060180', '张掖': '100080', '张家口': '140090', '周口': '150150', '驻马店': '150160'}
+liepinHeadHeaders={
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+    'Host': 'www.liepin.com',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+}
+liepinHeadCookie={
+    'abtest':'0',
+    '__uuid':'1577535821407.49',
+    'AGL_USER_ID':'1555a140-ec6a-4aac-8f2c-2a8cea583a38',
+    '_fecdn_':'1',
+    'city_site':'sh',
+    'access_system':'C',
+    'need_bind_tel':'false',
+    'c_flag':'270c63c927980f37d289c9c1b8b1812c',
+    'gr_user_id':'a281eae8-a064-4de8-92d6-7c24b1cbd7ed',
+    'bad1b2d9162fab1f80dde1897f7a2972_gr_last_sent_cs1':'27b7c3418a3e5cc01a667e00ad0d9493',
+    'grwng_uid':'4b9e970f-78ce-4a42-8c8e-6da811273079',
+    'imClientId':'e05adc96d9240617075ec95ecee24022',
+    'imId':'e05adc96d9240617463c5b34ff58501f',
+    'imClientId_0':'e05adc96d9240617075ec95ecee24022',
+    'imId_0':'e05adc96d9240617463c5b34ff58501f',
+    'bad1b2d9162fab1f80dde1897f7a2972_gr_cs1':'27b7c3418a3e5cc01a667e00ad0d9493',
+    'JSESSIONID':'677A2ED0BD1B911A2479771534459D5C',
+    'fe_se':'-1577673196578',
+    '__tlog':'1577673196583.83%7C00000000%7C00000000%7Cs_00_t00%7Cs_00_t00',
+    'Hm_lvt_a2647413544f5a04f00da7eee0d5e200':'1577629721,1577630049,1577630153,1577673197',
+    'char_captcha':'54A6964EC0A84205F5B5DFB85950E2FF',
+    '__session_seq':'2',
+    '__uv_seq':'2',
+    'Hm_lpvt_a2647413544f5a04f00da7eee0d5e200':str(execjs.eval("Math.round(+new Date / 1E3)"))
+}
+
+liepinHeaders={
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+    'Host': 'www.liepin.cn',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+}
+liepinCookie={
+    'abtest':'0',
+    '__uuid':'1577630050211.19',
+    '__tlog':'1577676388401.10%7C00000000%7C00000000%7C00000000%7C00000000',
+    'JSESSIONID':'1D8A86C0F00F4291DC305F24FF6FB752',
+    'Hm_lvt_a2647413544f5a04f00da7eee0d5e200':'1577630154,1577630186,1577676389,1577676444',
+    'city_site':'sh',
+    '__session_seq':'8',
+    '__uv_seq':'8',
+    'char_captcha':'54D83205C0A84242C2E558832D1A61F4',
+    'Hm_lpvt_a2647413544f5a04f00da7eee0d5e200':str(execjs.eval("Math.round(+new Date / 1E3)"))
+}
+liepinUrlParams={
+    'isAnalysis':'none',
+    'dqs': '020',
+    'pubTime':'none',
+    'salary':'none',
+    'subIndustry':'none',
+    'industryType':'none',
+    'compscale':'none',
+    'key': '数据分析',
+    'init': '-1',
+    'searchType': '1',
+    'headckid': 'fb24658bb49248e1',
+    'compkind':'none',
+    'fromSearchBtn': '2',
+    'sortFlag': '15',
+    'ckid': 'fb24658bb49248e1',
+    'degradeFlag': '0',
+    'jobKind':'none',
+    'industries':'none',
+    'clean_condition':'none',
+    'siTag': 'ZFDYQyfloRvvhTxLnVV_Qg~r3i1HcfrfE3VRWBaGW6LoA',
+    'd_sfrom': 'search_prime',
+    'd_ckId': 'af93d9386e789130bc66c644e239247f',
+    'd_curPage': '0',
+    'd_pageSize': '40',
+    'd_headId': 'af93d9386e789130bc66c644e239247f',
+    'curPage': '1'
+}
 
 
