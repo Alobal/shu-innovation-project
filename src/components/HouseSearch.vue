@@ -66,20 +66,21 @@ export default {
         changePage(page) {
             let that = this;
             searchHouse({
-                platform: this.form.platformValue,
-                city: this.form.search,
-                type: this.form.typeValue,
+                platform: that.form.platformValue,
+                city: that.form.search,
+                type: that.form.typeValue,
                 page: page
             }).then(function(res){
-                if(res.data.code == 404) {
-                    that.errMessage = res.data.message;
+                console.log(res);
+                if(res.code == 404) {
+                    that.errMessage = res.message;
                 }
                 else {
                     that.errMessage = '';
                 }
                 that.currentHeader = that.header[that.form.typeValue];
-                that.tableData = res.data.data;
-                that.resultDetail.pageCount = res.data.pages;
+                that.tableData = res.data;
+                that.resultDetail.pageCount = res.pages;
             })
         },
         handleSelect(val) {
