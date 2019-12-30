@@ -5,6 +5,7 @@
                 <el-option label="前程无忧" value="51"></el-option>
                 <el-option label="拉钩网" value="lagou"></el-option>
                 <el-option label="智联招聘" value="zhilian"></el-option>
+                <el-option label="猎聘" value="liepin"></el-option>
             </el-select>
             <el-input class="city" placeholder="城市名称" v-model="form.city"></el-input>
             <el-input class="job" placeholder="工作名称" v-model="form.job"></el-input>

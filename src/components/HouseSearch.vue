@@ -12,7 +12,7 @@
                 <el-option label="新房" value="新房" :disabled="typeDisabled.new"></el-option>
                 <el-option label="租房" value="租房" :disabled="typeDisabled.rent"></el-option>
             </el-select>
-            <el-input v-model="form.search"></el-input>
+            <el-input placeholder="请输入城市名称" v-model="form.search"></el-input>
             <el-button @click="changePage(1)" type="primary">搜索</el-button>
         </div>
         <el-divider></el-divider>
