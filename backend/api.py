@@ -6,6 +6,7 @@ import ziru
 import job51
 import lagou
 import fang
+import liepin
 
 app = Flask(__name__)
 
@@ -48,6 +49,8 @@ def job():
             return job51.run(city, job, page)
         if platform == 'lagou':
             return lagou.run(city, job, page)
+        if platform == 'liepin':
+            return liepin.run(city, job, page)            
     except Exception as e:
         return jsonify({"code": 404, "message": str(e)})
 

@@ -1,3 +1,5 @@
+import execjs
+
 #共有的设置
 lianjiaHeader={
     'Referer':'https://s1.ljcdn.com/feroot/pc/asset/lianjiaIM/css/lianjiaim.css?_v=201910151533466',
