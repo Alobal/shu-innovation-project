@@ -15,7 +15,6 @@
             <el-input v-model="form.search"></el-input>
             <el-button @click="changePage(1)" type="primary">搜索</el-button>
         </div>
-        <el-alert type="error" :title="errMessage" style="margin-top:20px; width:50%;" v-show="errMessage != ''"></el-alert>
         <el-divider></el-divider>
         <div class="result">
             <el-table :data="tableData" :header="currentHeader">
@@ -37,7 +36,6 @@ import {searchHouse} from '@/api/search.js'
 export default {
     data() {
         return {
-            errMessage:'',
             showAlert: true,
             form: {
                 platformValue: 'beike',
@@ -73,10 +71,7 @@ export default {
             }).then(function(res){
                 console.log(res);
                 if(res.code == 404) {
-                    that.errMessage = res.message;
-                }
-                else {
-                    that.errMessage = '';
+                    that.$message.error(res.message);
                 }
                 that.currentHeader = that.header[that.form.typeValue];
                 that.tableData = res.data;

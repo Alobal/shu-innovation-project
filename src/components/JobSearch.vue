@@ -54,14 +54,11 @@ export default {
                 job: this.form.job,
                 page: page
             }).then(function(res){
-                if(res.data.code == 404) {
-                    that.errMessage = res.data.message;
+                if(res.code == 404) {
+                    that.$message.error(res.message);
                 }
-                else {
-                    that.errMessage = '';
-                }
-                that.tableData = res.data.data;
-                that.resultDetail.pageCount = res.data.pages;
+                that.tableData = res.data;
+                that.resultDetail.pageCount = res.pages;
             })
         },
 
