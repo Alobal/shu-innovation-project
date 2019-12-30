@@ -5,11 +5,12 @@
                 <el-option label="贝壳" value="beike"></el-option>
                 <el-option label="链家" value="lianjia"></el-option>
                 <el-option label="自如" value="ziru"></el-option>
+                <el-option label="房天下" value="fang"></el-option>
             </el-select>
             <el-select v-model="form.typeValue">
-                <el-option label="二手房" value="二手房" :disabled="typeDisabled"></el-option>
-                <el-option label="新房" value="新房" :disabled="typeDisabled"></el-option>
-                <el-option label="租房" value="租房"></el-option>
+                <el-option label="二手房" value="二手房" :disabled="typeDisabled.sec"></el-option>
+                <el-option label="新房" value="新房" :disabled="typeDisabled.new"></el-option>
+                <el-option label="租房" value="租房" :disabled="typeDisabled.rent"></el-option>
             </el-select>
             <el-input v-model="form.search"></el-input>
             <el-button @click="changePage(1)" type="primary">搜索</el-button>
@@ -48,7 +49,11 @@ export default {
                 currentPage: 1,
             },
             tableData: [],
-            typeDisabled: false,
+            typeDisabled: {
+                sec: false,
+                new: false,
+                rent: false
+            },
             currentHeader: {},
             header: {
                 新房: ['title', 'houseType', 'state', 'position', 'tags', 'unitPrice', 'totalPrice'],
@@ -80,12 +85,18 @@ export default {
         handleSelect(val) {
             let that = this;
             if(val == 'ziru') {
-                console.log(val)
                 this.form.typeValue = '租房';
-                this.typeDisabled = true;
+                this.typeDisabled.sec = true;
+                this.typeDisabled.new = true;
             }
-             else {
-                 this.typeDisabled = false;
+            else if(val == 'fang') {
+                this.form.typeValue = '二手房';
+                this.typeDisabled.new = true;
+            }
+            else {
+                 this.typeDisabled.sec = false;
+                 this.typeDisabled.new = false;
+                 this.typeDisabled.rent = false;
              }
         }
     }

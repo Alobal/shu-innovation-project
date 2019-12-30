@@ -87,7 +87,6 @@ def get_details2(html,url):
     return totalList
 def get_page(page,base_url,typeh):
     url=''
-    print('正在爬取第'+str(page)+'页')
     if typeh=='二手房':
         url=base_url+'ershoufang/n'+str(page)+'/'
     else:

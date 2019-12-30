@@ -27,10 +27,12 @@ def house():
             return beike.run(city, typeh, page)
         if platform == 'lianjia':
             return lianjia.run(city, typeh, page)
+        # 只有二手房
         if platform == 'ziru':
             return ziru.run(city, page)
+        # 只有二手房和租房两种类型
         if platform=='fang':
-            return fang.run(city,typeh,page)#只有二手房和租房两种类型
+            return fang.run(city,typeh,page)
     except Exception as e:
         return jsonify({"code": 404, "message": str(e)})
 
