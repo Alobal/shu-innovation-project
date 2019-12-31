@@ -223,3 +223,22 @@ liepinUrlParams={
 }
 
 
+#百度直聘首页header
+baiduHeaders={
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+    'Cookie': 'BAIDUID=6F9F0FAE631FF0E151E5FB757BF4934D:FG=1; BIDUPSID=6F9F0FAE631FF0E151E5FB757BF4934D; PSTM=1577534366; BDUSS=X5ZYkdYS1N1RkpQcDkxeXFOUXUwRURqaH42VkZVQzgwNlU1b0poRHdtTld-eTVlSVFBQUFBJCQAAAAAAAAAAAEAAABp6UyU18XD1DY3MgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZyB15Wcgdee; BDORZ=FFFB88E999055A3F8A630C64834BD6D0; BDRCVFR[fq555l35Iot]=OjjlczwSj8nXy4Grjf8mvqV; H_PS_PSSID=; delPer=0; ZP_FR=aladdin-5463-zp_exact_new; ZP_FLAG=12; BCLID=11411983133585864749; BDSFRCVID=DnKOJeC62uBG6avuWZV-o4OuPHhRlBRTH6aIZ4XbzDJyJal95USJEG0PHf8g0KubBI0FogKK0eOTHk_F_2uxOjjg8UtVJeC6EG0Ptf8g0M5; H_BDCLCKID_SF=tJCDVC0MJK_3fP36q6_Wq4tehH4JJRQ9WDTm_Don3Mjdq-QG3p6Y3J_U-RbUBUrt-G6B-pPKKxQNqnoCKtKBKxJ3XMoGtxCe3mkjbn7Dfn02OP5PL6OU5P4syP4jKxRnWI0OKfA-b4ncjRcTehoM3xI8LNj405OTbIFO0KJDJCFKhDDlj6DbjjPW5ptXKPRtaCKX3b7Efhb_Op7_bf--DRLYQNjK-JQUyHFLWKbvbxJ1jMo1Ll5xy5K_yJCJXPjE3gQ8aJjsfC5lVpcHQT3my-5bbN3i-4jGWRRlWb3cWKJq8UbSMpnPBTD02-nBat-OQ6npaJ5nJq5nhMJmb67JDMr0exbH55ueJn-j3q; PSINO=1',
+    'Host': 'zhaopin.baidu.com',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+}
+baiduCitys=['北京','天津','太原','大同','呼和浩特','包头','石家庄','廊坊','邯郸','上海','杭州','宁波','温州','南京','济南','青岛','台州','嘉兴','金华','绍兴','苏州','无锡','常州','南通','扬州','徐州','连云港','福州','厦门','泉州','烟台','潍坊','临沂','淄博','菏泽','威海','合肥','马鞍山','芜湖','广州','深圳','海口','三亚','南宁','桂林','玉林','百色','武汉','南昌','郑州','长沙','九江','赣州','株洲','常德','宜昌','十堰','荆州','洛阳','南阳','新乡','安阳','重庆','成都','绵阳','贵阳','遵义','昆明','大理','拉萨','西安','宝鸡','西宁','银川','兰州','咸阳','天水','乌鲁木齐','昌吉','固原','沈阳','大连','哈尔滨','长春','吉林','朝阳','锦州','四平','大庆','牡丹江']
+
+
+
