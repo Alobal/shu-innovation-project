@@ -47,7 +47,7 @@ def get_details(html):
         dictList.append(dict)
     return dictList
 def get_page(page,keyword,id):
-    print('正在爬取第'+str(page)+'页')
+    # print('正在爬取第'+str(page)+'页')
     totalList=[]
     for paging in range(4):
         url='https://search.suning.com/emall/searchV1Product.do?keyword='+quote(keyword)+'&ci='+id+'&pg=01&cp=0&il='+str(page-1)+'&st=0&iy=0&isDoufu=1&isNoResult=0&n=1&sesab=ACAABAABCAAA&id=IDENTIFYING&cc=010&paging='+str(paging)+'&sub=1&jzq=13460'

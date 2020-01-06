@@ -15,3 +15,11 @@ export function searchJob(params) {
         params
     })
 }
+
+export function searchGoods(params) {
+    return request({
+        url: '/goods',
+        method: 'get',
+        params
+    })
+}

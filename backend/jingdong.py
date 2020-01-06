@@ -92,4 +92,4 @@ def run(keyword,page):
     totalDict['data']=get_page(keyword,page)
     jsonText=json.dumps(totalDict,ensure_ascii=False)
     return jsonText
-saving.saveFile('C://Users/23560/Desktop/file',run('手机',2))
+# saving.saveFile('C://Users/23560/Desktop/file',run('手机',2))

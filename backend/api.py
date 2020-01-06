@@ -7,6 +7,9 @@ import job51
 import lagou
 import fang
 import liepin
+import suning
+import jingdong
+import zhaopinBaidu
 
 app = Flask(__name__)
 
@@ -50,9 +53,26 @@ def job():
         if platform == 'lagou':
             return lagou.run(city, job, page)
         if platform == 'liepin':
-            return liepin.run(city, job, page)            
+            return liepin.run(city, job, page)
+        if platform == 'baidu':
+            return zhaopinBaidu(city, job, page)
     except Exception as e:
         return jsonify({"code": 404, "message": str(e)})
+
+
+@app.route('/goods', methods=['GET'])
+def goods():
+    platform = request.args['platform']
+    keyword = request.args['keyword']
+    page = int(request.args['page'])
+    try:
+        if platform == 'jingdong':
+            return jingdong.run(keyword, page)
+        if platform == 'suning':
+            return suning.run(keyword, page)          
+    except Exception as e:
+        return jsonify({"code": 404, "message": str(e)})
+
 
 if __name__ == '__main__':
     # 不加这个 部署的时候会报错 address alread in use
