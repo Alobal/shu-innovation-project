@@ -240,5 +240,31 @@ baiduHeaders={
 }
 baiduCitys=['北京','天津','太原','大同','呼和浩特','包头','石家庄','廊坊','邯郸','上海','杭州','宁波','温州','南京','济南','青岛','台州','嘉兴','金华','绍兴','苏州','无锡','常州','南通','扬州','徐州','连云港','福州','厦门','泉州','烟台','潍坊','临沂','淄博','菏泽','威海','合肥','马鞍山','芜湖','广州','深圳','海口','三亚','南宁','桂林','玉林','百色','武汉','南昌','郑州','长沙','九江','赣州','株洲','常德','宜昌','十堰','荆州','洛阳','南阳','新乡','安阳','重庆','成都','绵阳','贵阳','遵义','昆明','大理','拉萨','西安','宝鸡','西宁','银川','兰州','咸阳','天水','乌鲁木齐','昌吉','固原','沈阳','大连','哈尔滨','长春','吉林','朝阳','锦州','四平','大庆','牡丹江']
 
+#京东
+jindongUnchange='&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&suggest=1.his.0.0'
+jindongHeadear={
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+    'Host': 'search.jd.com',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+}
+jindongHeadear2={
+    'Accept': '*/*',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
+    'Connection': 'keep-alive',
+    'Host': 'search.jd.com',
+    'Referer': 'https://search.jd.com/Search?keyword=%E6%89%8B%E6%9C%BA&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&suggest=1.his.0.0&page=3&s=61&click=0',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+}
 
 
