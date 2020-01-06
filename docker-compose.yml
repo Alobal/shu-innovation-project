@@ -1,0 +1,11 @@
+version: '2'
+
+services: 
+  api:
+    build: ./
+    image: app:latest
+    container_name: app-api
+    restart: always
+    ports: 
+      - 8080:8080
+    

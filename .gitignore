@@ -8,6 +8,7 @@ __pycache__/
 /sid.txt
 
 docker.tar
+fabfile.py
 
 # local env files
 .env.local
